@@ -22,8 +22,6 @@
 var soundFile;
 var amplitude;
 
-var backgroundColor;
-
 // rectangle parameters
 var rectRotate = true;
 var rectMin = 15;
@@ -67,7 +65,7 @@ function setup() {
 }
 
 function draw() {
-  background(backgroundColor);
+  background(0);
 
   var level = amplitude.getLevel();
   detectBeat(level);
